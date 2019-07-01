@@ -13,6 +13,6 @@ while True:
 
     print("That voice in my head says %s" % request_str)
 
-    reply_str = "Stop saying %s" % reply_str
+    reply_str = "Stop saying %s" % request_str
     reply_bytes = bytes(reply_str, 'utf-8')
     server.send(reply_bytes)
